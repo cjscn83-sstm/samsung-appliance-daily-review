@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__7abcfcbd-f796-4034-adc9-a0e4574a17ff__NaverSearch-search_blog",
+      "mcp__7abcfcbd-f796-4034-adc9-a0e4574a17ff__NaverSearch-search_cafearticle",
+      "mcp__7abcfcbd-f796-4034-adc9-a0e4574a17ff__NaverSearch-search_webkr",
+      "Bash(npm list *)",
+      "Bash(mkdir \"C:/Users/cjscn/AppData/Roaming/npm\")",
+      "Bash(npm install *)",
+      "Bash(npm root *)",
+      "Bash(which soffice *)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

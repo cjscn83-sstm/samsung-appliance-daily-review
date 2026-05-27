@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>삼성 가전 일일 트렌드 — 최근 7일</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>삼성 가전 일일 트렌드</h1>
+    <p class="subtitle">
+      {% if days %}
+        최근 {{ days|length }}일 ·
+        {{ days[-1].date }} ~ {{ days[0].date }}
+      {% elif db_missing %}
+        아직 적재된 데이터가 없습니다.
+        오케스트레이터를 backfill 모드로 1회 실행하면 D-7 카드가 채워집니다.
+      {% else %}
+        아직 적재된 데이터가 없습니다.
+      {% endif %}
+    </p>
+  </header>
+
+  {% if not days %}
+  <section class="empty-banner">
+    <div class="empty-inner">
+      <h2>🗂️ 첫 데이터를 기다리는 중</h2>
+      <p>아래는 카드 레이아웃 미리보기입니다. 실제 데이터가 적재되면 자동으로 교체됩니다.</p>
+      <code>artifacts/history.db</code> 가 생성되면 이 안내가 사라집니다.
+    </div>
+  </section>
+  {% endif %}
+
+  <main class="card-grid">
+    {% if not days %}
+      {# Placeholder demo cards so the empty UI is meaningful #}
+      {% set demo = [
+        {'date':'2026-05-26','total':142,'positive_ratio':0.78,'ad_ratio':0.12,'star':4,
+         'headline_text':'비스포크 냉장고가 주방을 살린다','headline_source':'네이버블로그','headline_category':'냉장고','ad_warning':false},
+        {'date':'2026-05-25','total':98,'positive_ratio':0.85,'ad_ratio':0.08,'star':4,
+         'headline_text':'무풍 갤러리 에어컨 만족도가 가장 높았던 한 주','headline_source':'티스토리','headline_category':'에어컨','ad_warning':false},
+        {'date':'2026-05-24','total':67,'positive_ratio':0.52,'ad_ratio':0.55,'star':3,
+         'headline_text':'후기는 많지만 광고성 비중이 높았던 날','headline_source':'카페','headline_category':'세탁기','ad_warning':true},
+        {'date':'2026-05-23','total':54,'positive_ratio':0.72,'ad_ratio':0.18,'star':4,
+         'headline_text':'키친핏 냉장고 디자인 호평 이어져','headline_source':'네이버블로그','headline_category':'냉장고','ad_warning':false},
+        {'date':'2026-05-22','total':39,'positive_ratio':0.41,'ad_ratio':0.10,'star':2,
+         'headline_text':'건조기 소음 불만이 다수 등장','headline_source':'커뮤니티','headline_category':'건조기','ad_warning':false},
+        {'date':'2026-05-21','total':81,'positive_ratio':0.66,'ad_ratio':0.21,'star':3,
+         'headline_text':'네오 QLED TV 화질 만족 후기 다수','headline_source':'네이버블로그','headline_category':'TV','ad_warning':false},
+        {'date':'2026-05-20','total':28,'positive_ratio':0.0,'ad_ratio':0.0,'star':0,
+         'headline_text':None,'headline_source':None,'headline_category':None,'ad_warning':false}
+      ] %}
+      {% set days = demo %}
+    {% endif %}
+    {% for d in days %}
+    {% set tone = 'pos' if d.positive_ratio >= 0.7 else ('neg' if d.positive_ratio > 0 and d.positive_ratio <= 0.45 else 'mid') %}
+    <a class="testimonial-card star-{{ d.star }} tone-{{ tone }}" href="/day/{{ d.date }}">
+      {% if d.ad_warning %}
+        <div class="warn-banner">광고성 비중 50% 초과</div>
+      {% endif %}
+
+      <div class="stars" aria-label="별점 {{ d.star }}/5">
+        {% for i in range(5) %}
+          <span class="{% if i < d.star %}on{% else %}off{% endif %}">★</span>
+        {% endfor %}
+      </div>
+
+      <blockquote class="quote">
+        {% if d.headline_text %}
+          “{{ d.headline_text }}”
+        {% else %}
+          <em class="muted">대표 인용구 없음</em>
+        {% endif %}
+      </blockquote>
+
+      {% if d.headline_source or d.headline_category %}
+      <div class="quote-meta">
+        — {{ d.headline_source or "" }}
+        {% if d.headline_category %} · {{ d.headline_category }}{% endif %}
+      </div>
+      {% endif %}
+
+      <hr class="divider" />
+
+      <div class="date">{{ d.date }}</div>
+      <div class="metrics">
+        <span class="metric">후기 <strong>{{ d.total }}</strong>건</span>
+        <span class="metric pos">긍정 <strong>{{ (d.positive_ratio * 100)|round|int }}%</strong></span>
+        <span class="metric ad">광고 <strong>{{ (d.ad_ratio * 100)|round|int }}%</strong></span>
+      </div>
+
+      <div class="cta">상세 보기 →</div>
+    </a>
+    {% endfor %}
+  </main>
+
+  <footer class="page-footer">
+    <small>data: artifacts/history.db · viewer: FastAPI</small>
+  </footer>
+</body>
+</html>

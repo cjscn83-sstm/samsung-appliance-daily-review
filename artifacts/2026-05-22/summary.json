@@ -1,0 +1,59 @@
+{
+  "date": "2026-05-22",
+  "metrics": {
+    "total": 7,
+    "positive": 5,
+    "negative": 0,
+    "mixed": 0,
+    "unclear": 2,
+    "ad_count": 6,
+    "positive_ratio": 0.7142857142857143,
+    "ad_ratio": 0.8571428571428571,
+    "star": 4
+  },
+  "headline_quote": {
+    "text": "거실에 예술을 거는 법! ... 단순한 가전이 아니라, 여러분의 라이프스타일을 예술적인...",
+    "source": "네이버블로그",
+    "category": "TV"
+  },
+  "trend_summary": [
+    "어제 수집된 7건은 TV(4) + 사운드/오디오(1) + 프로젝터(1) + 냉장고(1)로 TV/AV 카테고리에 86%가 집중되었다. 부정 발췌는 0건이며, 키워드 빈도 상위는 \"더프레임/The Frame\" 5회로 단일 시리즈가 신호를 지배했다.",
+    "주목할 신호: \"혼수가전 패키지\" 맥락(더프레임 TV + 비스포크 AI 콤보 세탁기 + 비스포크 냉장고)이 2회 반복 등장, 대화면(85/75/65인치) 선호가 함께 관찰됨. 다만 비광고 표본 2건이 모두 동일 매장 동일 시점이라 표본 편향이 크다.",
+    "부정 의견이 누적되는 품목: 없음 (부정 0건). 단 광고성 후기 다수에서 \"단점 0건\" 패턴이 관찰되어 긍정 카운트의 신뢰도가 낮다."
+  ],
+  "category_sentiment": [
+    {"category": "TV", "positive": 4, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "사운드/오디오", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
+    {"category": "프로젝터", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "냉장고", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "세탁기/건조기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0}
+  ],
+  "excerpts": {
+    "positive": [
+      {
+        "text": "이번에 저희가 계약한 혼수 가전은 ✔️2026 더프레임 TV 85인치 ✔️ 비스포크 AI 콤보 세탁기 ✔️ 비스포크...",
+        "source": "네이버블로그",
+        "category": "TV",
+        "url": "https://blog.naver.com/blueblue721/224293766076"
+      },
+      {
+        "text": "광교 갤러리아 삼성스토어는 가격 메리트가 확실히... 이번에 저희가 구매한 혼수 가전은 ✔️ 2026 더프레임 TV 85인치 ✔️ 비스포크 AI 콤보 세탁기 ✔️ 비스포크...",
+        "source": "네이버블로그",
+        "category": "냉장고",
+        "url": "https://blog.naver.com/horse0121/224293766038"
+      }
+    ],
+    "negative": []
+  },
+  "keywords": {
+    "positive": [
+      {"term": "더프레임 / The Frame", "count": 5},
+      {"term": "디자인·갤러리·예술", "count": 4},
+      {"term": "혼수가전", "count": 2},
+      {"term": "가격 메리트", "count": 2},
+      {"term": "비스포크 AI", "count": 2}
+    ],
+    "negative": []
+  },
+  "ad_warning": true
+}

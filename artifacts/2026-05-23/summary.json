@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-23",
+  "metrics": {
+    "total": 4,
+    "positive": 3,
+    "negative": 0,
+    "mixed": 1,
+    "unclear": 0,
+    "ad_count": 2,
+    "positive_ratio": 0.75,
+    "ad_ratio": 0.5,
+    "star": 4
+  },
+  "headline_quote": {
+    "text": "예전부터 삼성 Neo QLED AI TV 모델이 궁금했는데, 마침 65인치 스탠드형 제품을 구입했어요.",
+    "source": "네이버블로그",
+    "category": "TV"
+  },
+  "trend_summary": [
+    "2026-05-23 수집 후기는 전부 TV 카테고리(4건)에 몰렸으며, 긍정 3 / 혼합 1 / 부정 0으로 부정 시그널이 잡히지 않았다. TV 내에서도 65/75/85인치 대형 라인과 더프레임 시리즈가 핵심 화두였다.",
+    "주목할 신호: 더프레임 관련 긍정 언급이 2회로 키워드 빈도 상위에 진입했고, 벽걸이·선 숨김 시공 후기가 인테리어 맥락에서 반복적으로 나타남.",
+    "부정 의견 누적 경고: 해당 일자에는 부정 후기 0건이라 누적 추세 판단 불가. 단, 혼합 글에서 '2.5m 시청 거리 확보 필요'라는 대화면 제약 단서가 1건 등장한 점은 다음 회차에 추적할 신호."
+  ],
+  "category_sentiment": [
+    {
+      "category": "TV",
+      "positive": 3,
+      "negative": 0,
+      "mixed": 1,
+      "unclear": 0
+    }
+  ],
+  "excerpts": {
+    "positive": [
+      {
+        "text": "설치 방법과 1달 사용한 후기 간단하게 남겨볼게요. 삼성 85인치 QLED TV KQ85QND95AFXKR",
+        "source": "네이버블로그",
+        "category": "TV",
+        "url": "https://blog.naver.com/inthe_galaxy/224294563877"
+      },
+      {
+        "text": "거실을 더 넓고 세련되게 리모델링하고 싶으시다면 언제든지",
+        "source": "네이버블로그",
+        "category": "TV",
+        "url": "https://blog.naver.com/tvmanager/224294225412"
+      }
+    ],
+    "negative": []
+  },
+  "keywords": {
+    "positive": [
+      {"term": "75인치/85인치/65인치 대화면", "count": 4},
+      {"term": "AI 4K 화질", "count": 3},
+      {"term": "더프레임/벽걸이/선 숨김 시공", "count": 3},
+      {"term": "QLED·Neo QLED 프리미엄", "count": 3},
+      {"term": "스탠드형/홈시네마 인테리어", "count": 2}
+    ],
+    "negative": []
+  },
+  "ad_warning": false
+}

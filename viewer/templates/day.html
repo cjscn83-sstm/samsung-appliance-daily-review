@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ date }} · 삼성 가전 후기 상세</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="page-header detail">
+    <a class="back" href="/">← 돌아가기</a>
+    {% if is_demo %}<span class="badge demo">DEMO</span>{% endif %}
+    <h1>{{ date }}</h1>
+    <p class="subtitle">
+      총 <strong>{{ meta.total }}</strong>건 ·
+      긍정 <strong>{{ (meta.positive_ratio * 100)|round|int }}%</strong> ·
+      광고 <strong>{{ (meta.ad_ratio * 100)|round|int }}%</strong>
+      {% if meta.ad_warning %}<span class="badge warn">광고성 경고</span>{% endif %}
+    </p>
+  </header>
+
+  <main class="detail-main">
+
+    <section class="block">
+      <h2>종합 트렌드</h2>
+      {% if trend_summary %}
+      <ul class="trend">
+        {% for line in trend_summary %}<li>{{ line }}</li>{% endfor %}
+      </ul>
+      {% else %}
+      <p class="muted">트렌드 요약 없음</p>
+      {% endif %}
+    </section>
+
+    <section class="block">
+      <h2>카테고리 × 감성</h2>
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th>세부 품목</th>
+            <th class="pos">긍정</th>
+            <th class="neg">부정</th>
+            <th>혼합</th>
+            <th>근거부족</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in category_sentiment %}
+          <tr>
+            <td>{{ row.category }}</td>
+            <td class="pos">{{ row.positive }}</td>
+            <td class="neg">{{ row.negative }}</td>
+            <td>{{ row.mixed }}</td>
+            <td>{{ row.unclear }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="block excerpts">
+      <h2>댓글 발췌 — 긍정 vs 부정</h2>
+      <div class="two-col">
+        <div class="col pos-col">
+          <h3>긍정 <span class="count">({{ excerpts_positive|length }})</span></h3>
+          {% if excerpts_positive %}
+            {% for e in excerpts_positive %}
+            <article class="excerpt pos">
+              <blockquote>“{{ e.text }}”</blockquote>
+              <div class="meta">
+                <span class="src">{{ e.source or "출처 미상" }}</span>
+                <span class="cat">· {{ e.category }}</span>
+                {% if e.url %}
+                  · <a href="{{ e.url }}" target="_blank" rel="noopener">원문</a>
+                {% endif %}
+              </div>
+            </article>
+            {% endfor %}
+          {% else %}
+            <p class="muted">긍정 발췌 없음</p>
+          {% endif %}
+        </div>
+
+        <div class="col neg-col">
+          <h3>부정 <span class="count">({{ excerpts_negative|length }})</span></h3>
+          {% if excerpts_negative %}
+            {% for e in excerpts_negative %}
+            <article class="excerpt neg">
+              <blockquote>“{{ e.text }}”</blockquote>
+              <div class="meta">
+                <span class="src">{{ e.source or "출처 미상" }}</span>
+                <span class="cat">· {{ e.category }}</span>
+                {% if e.url %}
+                  · <a href="{{ e.url }}" target="_blank" rel="noopener">원문</a>
+                {% endif %}
+              </div>
+            </article>
+            {% endfor %}
+          {% else %}
+            <p class="muted">부정 발췌 없음</p>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>키워드 상위</h2>
+      <div class="two-col">
+        <div class="col">
+          <h3 class="pos">긍정 키워드</h3>
+          <ul class="keywords">
+            {% for k in keywords_positive %}
+            <li><span class="term">{{ k.term }}</span> <span class="cnt">{{ k.count }}</span></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="neg">부정 키워드</h3>
+          <ul class="keywords">
+            {% for k in keywords_negative %}
+            <li><span class="term">{{ k.term }}</span> <span class="cnt">{{ k.count }}</span></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
