@@ -1,0 +1,71 @@
+{
+  "date": "2026-05-27",
+  "metrics": {
+    "total": 7,
+    "positive": 4,
+    "negative": 0,
+    "mixed": 1,
+    "unclear": 2,
+    "ad_count": 3,
+    "positive_ratio": 0.571,
+    "ad_ratio": 0.429,
+    "star": 3
+  },
+  "headline_quote": {
+    "text": "직접 사용해본 사용후기도 좋다는 평이 많아 더 궁금해졌고, 간편하게 집에서 영화관 분위기를 낼 수 있을 것 같아 결국 구매하게 됐습니다",
+    "source": "https://blog.naver.com/rmawldid/224297821484",
+    "category": "프로젝터"
+  },
+  "trend_summary": [
+    "세탁기/건조기에서 구매 후기 평균 4.8~4.9점(32건·43건 기준)이 집계 데이터로 확인되며, 이사·신혼·선물·기존 교체 수요가 주요 구매 동기로 반복 언급됨.",
+    "프로젝터(삼성 더 프리스타일2)는 광고성 없는 순수 실사용 후기 1건에서 영화관 분위기·간편함 등 긍정 구매 경험이 구체적으로 기술됨.",
+    "에어컨과 냉장고는 수집 후기 전량이 광고성(의심)으로 분류되어 실수요 파악이 불가하며, 창문형 에어컨 소음 우려가 유일한 부정 신호로 등장함."
+  ],
+  "category_sentiment": [
+    {"category": "프로젝터", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "냉장고", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "에어컨", "positive": 0, "negative": 0, "mixed": 1, "unclear": 1},
+    {"category": "세탁기/건조기", "positive": 2, "negative": 0, "mixed": 0, "unclear": 1}
+  ],
+  "excerpts": {
+    "positive": [
+      {
+        "category": "프로젝터",
+        "source": "https://blog.naver.com/rmawldid/224297821484",
+        "text": "들어와 삼성 더 프리스타일2를 구매하게 됐어요. 직접 사용해본 사용후기도 좋다는 평이 많아 더 궁해졌고, 간편하게 집에서 영화관 분위기를 낼 수 있을 것 같아 결국 구매하게 됐습니다",
+        "url": "https://blog.naver.com/rmawldid/224297821484"
+      },
+      {
+        "category": "세탁기/건조기",
+        "source": "http://cafe.naver.com/gdonif/37",
+        "text": "2026년 5월 말 그돈이면 데이터 기준 세탁기 89개 중 4위, 종합점수 79.9점. 구매 후기 43건 평균 4.9점. 기존 교체 수요가 반복적으로 보입니다. 9만원 25kg보다 부담을 낮춰 볼 수 있습니다.",
+        "url": "http://cafe.naver.com/gdonif/37"
+      },
+      {
+        "category": "세탁기/건조기",
+        "source": "http://cafe.naver.com/gdonif/38",
+        "text": "2026년 5월 말 그돈이면 데이터 기준 세탁기 89개 중 7위, 종합점수 79.6점인 후보라, 가족 수보다 빨래 부피가 많음/이사·신혼/선물/기존 교체 수요. 구매 후기 32건 평균 4.8점 이사·신혼, 선물, 기존 교체 수요가 많음.",
+        "url": "http://cafe.naver.com/gdonif/38"
+      }
+    ],
+    "negative": []
+  },
+  "keywords": {
+    "positive": [
+      {"term": "구매 후기 평균 4.8~4.9점", "count": 2},
+      {"term": "기존 교체 수요", "count": 2},
+      {"term": "BESPOKE AI", "count": 2},
+      {"term": "종합점수 79점대", "count": 2},
+      {"term": "영화관 분위기", "count": 1},
+      {"term": "간편하게", "count": 1},
+      {"term": "이사·신혼·선물 수요", "count": 1},
+      {"term": "2026 신상", "count": 1},
+      {"term": "사용후기 좋다", "count": 1},
+      {"term": "더 프리스타일", "count": 1}
+    ],
+    "negative": [
+      {"term": "소음 (염려)", "count": 1}
+    ]
+  },
+  "ad_warning": false
+}

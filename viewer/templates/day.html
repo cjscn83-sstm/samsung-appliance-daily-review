@@ -66,9 +66,9 @@
           {% if excerpts_positive %}
             {% for e in excerpts_positive %}
             <article class="excerpt pos">
-              <blockquote>“{{ e.text }}”</blockquote>
+              <blockquote>”{{ e.text|mask_store }}”</blockquote>
               <div class="meta">
-                <span class="src">{{ e.source or "출처 미상" }}</span>
+                <span class="src">{{ e.source|fmt_source or "출처 미상" }}</span>
                 <span class="cat">· {{ e.category }}</span>
                 {% if e.url %}
                   · <a href="{{ e.url }}" target="_blank" rel="noopener">원문</a>
@@ -86,9 +86,9 @@
           {% if excerpts_negative %}
             {% for e in excerpts_negative %}
             <article class="excerpt neg">
-              <blockquote>“{{ e.text }}”</blockquote>
+              <blockquote>”{{ e.text|mask_store }}”</blockquote>
               <div class="meta">
-                <span class="src">{{ e.source or "출처 미상" }}</span>
+                <span class="src">{{ e.source|fmt_source or "출처 미상" }}</span>
                 <span class="cat">· {{ e.category }}</span>
                 {% if e.url %}
                   · <a href="{{ e.url }}" target="_blank" rel="noopener">원문</a>

@@ -68,7 +68,7 @@
 
       <blockquote class="quote">
         {% if d.headline_text %}
-          “{{ d.headline_text }}”
+          "{{ d.headline_text|mask_store }}"
         {% else %}
           <em class="muted">대표 인용구 없음</em>
         {% endif %}
@@ -76,7 +76,7 @@
 
       {% if d.headline_source or d.headline_category %}
       <div class="quote-meta">
-        — {{ d.headline_source or "" }}
+        — {{ d.headline_source|fmt_source }}
         {% if d.headline_category %} · {{ d.headline_category }}{% endif %}
       </div>
       {% endif %}

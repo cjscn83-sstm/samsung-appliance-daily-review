@@ -33,6 +33,18 @@ app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
 
 
+import re as _re
+
+def _mask_store(value: str | None) -> str:
+    """텍스트 내 '삼성스토어 XX점' → '삼성스토어 **점' 으로 마스킹."""
+    if not value:
+        return ""
+    return _re.sub(r"삼성\s*스토어\s*\S*점", "삼성스토어 **점", value)
+
+templates.env.filters["fmt_source"] = _mask_store
+templates.env.filters["mask_store"] = _mask_store
+
+
 def get_conn() -> sqlite3.Connection:
     if not DB_PATH.exists():
         raise HTTPException(

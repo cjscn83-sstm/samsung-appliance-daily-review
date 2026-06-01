@@ -1,0 +1,123 @@
+{
+  "date": "2026-05-29",
+  "metrics": {
+    "total": 10,
+    "positive": 1,
+    "negative": 2,
+    "mixed": 1,
+    "unclear": 6,
+    "ad_count": 1,
+    "positive_ratio": 0.1,
+    "ad_ratio": 0.1,
+    "star": 0
+  },
+  "headline_quote": {
+    "text": "이건 단순히 가전제품을 넘어선 하나의 라이프스타일 도구라는 느낌을 강하게 받았답니다.",
+    "source": "https://blog.naver.com/ksmo0913/224299683294",
+    "category": "TV/영상·음향 > 프로젝터"
+  },
+  "trend_summary": [
+    "총 수집 후기 10건 중 실사용 감성 판단 가능 건수는 4건(긍정 1 / 부정 2 / 혼합 1)에 불과하며, 나머지 6건(60%)은 견적 문의·비교 정보 글로 감성 판단 불가.",
+    "에어컨이 수집의 60%(6건)를 차지했으나 실사용 후기는 혼합 1건·부정 1건이며, 창문형 배수 불편과 소음이 반복 언급됨.",
+    "광고성 비중은 10%(1/10)로 기준 이하이나, 근거 부족 비중 60% 초과로 이날 트렌드 판단에는 중대한 한계가 있음."
+  ],
+  "category_sentiment": [
+    {
+      "category": "TV/영상·음향 > 프로젝터",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "주방가전 > 냉장고",
+      "positive": 0,
+      "negative": 1,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "리빙가전 > 에어컨",
+      "positive": 0,
+      "negative": 1,
+      "mixed": 1,
+      "unclear": 4
+    },
+    {
+      "category": "리빙가전 > 세탁기/건조기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    }
+  ],
+  "excerpts": {
+    "positive": [
+      {
+        "category": "TV/영상·음향 > 프로젝터",
+        "source": "https://blog.naver.com/ksmo0913/224299683294",
+        "text": "이건 단순히 가전제품을 넘어선 하나의 라이프스타일 도구라는 느낌을 강하게 받았답니다.",
+        "url": "https://blog.naver.com/ksmo0913/224299683294"
+      },
+      {
+        "category": "TV/영상·음향 > 프로젝터",
+        "source": "https://blog.naver.com/ksmo0913/224299683294",
+        "text": "솔직히 처음에는 그냥 디자인만...",
+        "url": "https://blog.naver.com/ksmo0913/224299683294"
+      }
+    ],
+    "negative": [
+      {
+        "category": "주방가전 > 냉장고",
+        "source": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150722",
+        "text": "무소음(컴프레서없는)냉장고는 외부온도가 높으면(30도 이상)냉장고내 온도가 올라갑니다.",
+        "url": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150722"
+      },
+      {
+        "category": "주방가전 > 냉장고",
+        "source": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150722",
+        "text": "펠티에 소자인데...음.어...그냥 보기좋은 쓰래기라고밖에 말씀 못드리겠군요.",
+        "url": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150722"
+      },
+      {
+        "category": "리빙가전 > 에어컨",
+        "source": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150716",
+        "text": "설명 보니까 외벽 배수 안된다고 하는데.. 확장형이라 베란다가 없는방인데 그럼 설치를 하더라도 물통을 계속 비워줘야 한다는 얘긴데 이게 맞나요?",
+        "url": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150716"
+      },
+      {
+        "category": "리빙가전 > 에어컨",
+        "source": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150716",
+        "text": "자체건조모드가 있긴한데 소음도 크고 한계가 있어서 물받이 하는게 맞긴하죠.",
+        "url": "https://www.ppomppu.co.kr/zboard/view.php?id=av&no=150716"
+      }
+    ]
+  },
+  "keywords": {
+    "positive": [
+      {"term": "무풍", "count": 1},
+      {"term": "라이프스타일", "count": 1},
+      {"term": "디자인", "count": 1},
+      {"term": "무풍 모드", "count": 1},
+      {"term": "피로감 감소", "count": 1},
+      {"term": "미세구멍 분산", "count": 1},
+      {"term": "빠른 냉방", "count": 1},
+      {"term": "온도 고른 분포", "count": 1},
+      {"term": "직접 사용", "count": 1},
+      {"term": "라이프스타일 도구", "count": 1}
+    ],
+    "negative": [
+      {"term": "소음", "count": 2},
+      {"term": "가성비", "count": 1},
+      {"term": "고온 성능 한계", "count": 1},
+      {"term": "물통 비우기", "count": 1},
+      {"term": "창문 호환성", "count": 1},
+      {"term": "프리미엄 가격", "count": 1},
+      {"term": "냉방 면적 한정", "count": 1},
+      {"term": "설치 제한", "count": 1},
+      {"term": "효율 낮음", "count": 1},
+      {"term": "자체건조 한계", "count": 1}
+    ]
+  },
+  "ad_warning": false
+}
