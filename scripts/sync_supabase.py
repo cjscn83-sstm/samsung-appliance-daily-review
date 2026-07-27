@@ -26,6 +26,23 @@ except ModuleNotFoundError:
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "artifacts" / "history.db"
 
+
+def _load_dotenv() -> None:
+    """ROOT/.env 의 KEY=VALUE 를 (이미 설정 안 된 것만) os.environ 에 로드.
+
+    비밀번호가 든 DATABASE_URL 을 채팅/커밋에 노출하지 않고 로컬 파일로 두기 위함.
+    .env 는 .gitignore 처리되어 있다.
+    """
+    env = ROOT / ".env"
+    if not env.exists():
+        return
+    for line in env.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, val = line.partition("=")
+        os.environ.setdefault(key.strip(), val.strip().strip('"').strip("'"))
+
 # SQLite → Postgres DDL (load_history.py 스키마 변환: REAL→DOUBLE PRECISION,
 # AUTOINCREMENT→BIGSERIAL). date는 문자열 유지 위해 TEXT.
 DDL = """
@@ -129,6 +146,7 @@ def upsert_date(pg: "psycopg.Connection", sl: sqlite3.Connection, date: str) -> 
 
 
 def main() -> int:
+    _load_dotenv()
     url = os.getenv("DATABASE_URL")
     if not url:
         sys.exit("DATABASE_URL 환경변수가 없습니다. Supabase Session pooler 연결 문자열을 설정하세요.")
