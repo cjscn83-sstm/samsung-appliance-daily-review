@@ -14,6 +14,7 @@ Reads artifacts/history.db (created by data-archivist) and renders:
 from __future__ import annotations
 
 import json
+import os
 import re
 import sqlite3
 from pathlib import Path
@@ -28,6 +29,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "artifacts" / "history.db"
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 STATIC_DIR = Path(__file__).resolve().parent / "static"
+
+# DATABASE_URL(Supabase Postgres)이 있으면 Postgres, 없으면 로컬 SQLite 폴백.
+DATABASE_URL = os.getenv("DATABASE_URL")
+USE_PG = bool(DATABASE_URL)
 
 app = FastAPI(title="Samsung Appliance Daily Review Viewer")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
@@ -44,7 +49,34 @@ templates.env.filters["fmt_source"] = _mask_store
 templates.env.filters["mask_store"] = _mask_store
 
 
-def get_conn() -> sqlite3.Connection:
+class _Conn:
+    """SQLite/Postgres 공통 커넥션 래퍼.
+
+    Postgres일 때만 `?` 플레이스홀더를 `%s`로 변환한다(현 쿼리에 `?`·`%`
+    리터럴이 없어 안전). 양쪽 모두 execute→fetchall/fetchone, dict(row)가 동작한다.
+    """
+
+    def __init__(self, raw: Any, is_pg: bool) -> None:
+        self._raw = raw
+        self._is_pg = is_pg
+
+    def execute(self, sql: str, params: tuple = ()):  # noqa: ANN201
+        if self._is_pg:
+            sql = sql.replace("?", "%s")
+        return self._raw.execute(sql, params)
+
+    def close(self) -> None:
+        self._raw.close()
+
+
+def get_conn() -> _Conn:
+    if USE_PG:
+        import psycopg
+        from psycopg.rows import dict_row
+
+        raw = psycopg.connect(DATABASE_URL, row_factory=dict_row, autocommit=True)
+        return _Conn(raw, is_pg=True)
+
     if not DB_PATH.exists():
         raise HTTPException(
             status_code=503,
@@ -53,13 +85,13 @@ def get_conn() -> sqlite3.Connection:
                 "Run the orchestrator first (backfill mode) to populate data."
             ),
         )
-    conn = sqlite3.connect(str(DB_PATH))
-    conn.row_factory = sqlite3.Row
-    return conn
+    raw = sqlite3.connect(str(DB_PATH))
+    raw.row_factory = sqlite3.Row
+    return _Conn(raw, is_pg=False)
 
 
 def fetch_recent_days(limit: int = 7) -> list[dict[str, Any]]:
-    if not DB_PATH.exists():
+    if not USE_PG and not DB_PATH.exists():
         return []
     conn = get_conn()
     try:
@@ -144,7 +176,7 @@ def index(request: Request):
     return templates.TemplateResponse(
         request,
         "index.html",
-        {"days": days, "db_missing": not DB_PATH.exists()},
+        {"days": days, "db_missing": not USE_PG and not DB_PATH.exists()},
     )
 
 
@@ -167,4 +199,7 @@ def api_day(date: str) -> JSONResponse:
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="127.0.0.1", port=8765)
+    # 호스팅(Render 등)은 $PORT를 주입 → 0.0.0.0 바인드. 로컬은 127.0.0.1:8765.
+    port = int(os.getenv("PORT", "8765"))
+    host = "0.0.0.0" if os.getenv("PORT") else "127.0.0.1"
+    uvicorn.run(app, host=host, port=port)
