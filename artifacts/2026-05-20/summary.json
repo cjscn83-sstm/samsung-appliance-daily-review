@@ -18,23 +18,125 @@
     "부정 의견이 누적되는 품목은 현재 데이터로는 식별되지 않습니다 (부정 분류 0건)."
   ],
   "category_sentiment": [
-    {"category": "TV", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "모니터", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "사운드/오디오", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "프로젝터", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "냉장고", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "김치냉장고", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "인덕션", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "식기세척기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "정수기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "큐커/오븐", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "전자레인지", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "세탁기/건조기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "청소기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "에어컨", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "의류관리기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "공기청정기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 2},
-    {"category": "제습기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 0}
+    {
+      "category": "공기청정기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 2
+    },
+    {
+      "category": "TV",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "모니터",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "사운드/오디오",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "프로젝터",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "냉장고",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "김치냉장고",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "인덕션",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "식기세척기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "정수기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "큐커/오븐",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "전자레인지",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "세탁기/건조기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "청소기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "에어컨",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "의류관리기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "제습기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    }
   ],
   "excerpts": {
     "positive": [],

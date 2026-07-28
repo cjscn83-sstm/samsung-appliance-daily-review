@@ -22,18 +22,90 @@
     "리빙·주방가전(세탁기/건조기, 냉장고, 인덕션, 식기세척기, 에어컨, 청소기 등) 전 품목에서 실사용 후기가 없거나 구매 전 견적 문의 글이 유일 출처로, 실사용 트렌드 판단이 불가능하다."
   ],
   "category_sentiment": [
-    {"category": "TV", "positive": 7, "negative": 0, "mixed": 0, "unclear": 2},
-    {"category": "프로젝터/이동형 TV", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "큐커/오븐", "positive": 2, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "전자레인지", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "냉장고", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "세탁기/건조기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "인덕션", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "식기세척기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "청소기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "에어컨", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "공기청정기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "정수기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1}
+    {
+      "category": "TV",
+      "positive": 7,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 2
+    },
+    {
+      "category": "큐커/오븐",
+      "positive": 2,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "프로젝터",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "전자레인지",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "냉장고",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "세탁기/건조기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "인덕션",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "식기세척기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "청소기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "에어컨",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "공기청정기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "정수기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    }
   ],
   "excerpts": {
     "positive": [
@@ -48,16 +120,46 @@
   },
   "keywords": {
     "positive": [
-      {"term": "화질", "count": 6},
-      {"term": "AI 기능", "count": 4},
-      {"term": "Neo QLED", "count": 4},
-      {"term": "디자인", "count": 3},
-      {"term": "홈시네마", "count": 3},
-      {"term": "밝기", "count": 2},
-      {"term": "색감", "count": 2},
-      {"term": "비스포크", "count": 2},
-      {"term": "가성비", "count": 2},
-      {"term": "A/S", "count": 1}
+      {
+        "term": "화질",
+        "count": 6
+      },
+      {
+        "term": "AI 기능",
+        "count": 4
+      },
+      {
+        "term": "Neo QLED",
+        "count": 4
+      },
+      {
+        "term": "디자인",
+        "count": 3
+      },
+      {
+        "term": "홈시네마",
+        "count": 3
+      },
+      {
+        "term": "밝기",
+        "count": 2
+      },
+      {
+        "term": "색감",
+        "count": 2
+      },
+      {
+        "term": "비스포크",
+        "count": 2
+      },
+      {
+        "term": "가성비",
+        "count": 2
+      },
+      {
+        "term": "A/S",
+        "count": 1
+      }
     ],
     "negative": []
   },

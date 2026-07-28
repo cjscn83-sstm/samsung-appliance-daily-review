@@ -17,8 +17,20 @@
     "수집된 3건 전건이 평가 표현을 포함하지 않아(발췌 불완전 1건, 중고 거래 배송 일지 2건) 감성 분류 가능 텍스트가 0건이며, 광고성 후기는 0건(0%)이다."
   ],
   "category_sentiment": [
-    {"category": "주방가전 > 큐커/오븐", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "리빙가전 > 세탁기/건조기", "positive": 0, "negative": 0, "mixed": 0, "unclear": 2}
+    {
+      "category": "세탁기/건조기",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 2
+    },
+    {
+      "category": "큐커/오븐",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    }
   ],
   "excerpts": {
     "positive": [],

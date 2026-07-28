@@ -22,13 +22,55 @@
     "청소기는 수집량(8건)은 많지만 광고성 비중이 87.5%로 가장 높아, 비스포크 AI 제트 단독 만족도로 단정하기에는 무리가 있다."
   ],
   "category_sentiment": [
-    {"category": "TV", "positive": 2, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "큐커/오븐", "positive": 6, "negative": 0, "mixed": 1, "unclear": 1},
-    {"category": "세탁기/건조기", "positive": 2, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "청소기", "positive": 5, "negative": 0, "mixed": 1, "unclear": 2},
-    {"category": "에어컨", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "의류관리기", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "공기청정기", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0}
+    {
+      "category": "큐커/오븐",
+      "positive": 6,
+      "negative": 0,
+      "mixed": 1,
+      "unclear": 1
+    },
+    {
+      "category": "청소기",
+      "positive": 5,
+      "negative": 0,
+      "mixed": 1,
+      "unclear": 2
+    },
+    {
+      "category": "TV",
+      "positive": 2,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "세탁기/건조기",
+      "positive": 2,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "에어컨",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "의류관리기",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "공기청정기",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    }
   ],
   "excerpts": {
     "positive": [
@@ -79,11 +121,26 @@
   },
   "keywords": {
     "positive": [
-      {"term": "만족/만족도", "count": 8},
-      {"term": "추천", "count": 7},
-      {"term": "신혼가전/혼수", "count": 6},
-      {"term": "비스포크 AI", "count": 5},
-      {"term": "대용량", "count": 3}
+      {
+        "term": "만족/만족도",
+        "count": 8
+      },
+      {
+        "term": "추천",
+        "count": 7
+      },
+      {
+        "term": "신혼가전/혼수",
+        "count": 6
+      },
+      {
+        "term": "비스포크 AI",
+        "count": 5
+      },
+      {
+        "term": "대용량",
+        "count": 3
+      }
     ],
     "negative": []
   },

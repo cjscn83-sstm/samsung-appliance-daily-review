@@ -22,15 +22,62 @@
     "부정 분류 후기는 0건이지만, 이는 광고성 86%로 인한 표본 편향 결과로 해석해야 하며 \"부정 신호 없음\"으로 단정할 수 없다."
   ],
   "category_sentiment": [
-    {"category": "TV", "positive": 1, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "더 프레임", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "사운드/오디오", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "프로젝터", "positive": 1, "negative": 0, "mixed": 0, "unclear": 1},
-    {"category": "김치냉장고", "positive": 4, "negative": 0, "mixed": 1, "unclear": 0},
-    {"category": "인덕션", "positive": 1, "negative": 0, "mixed": 1, "unclear": 0},
-    {"category": "큐커/오븐", "positive": 5, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "전자레인지", "positive": 2, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "청소기", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0}
+    {
+      "category": "김치냉장고",
+      "positive": 4,
+      "negative": 0,
+      "mixed": 1,
+      "unclear": 0
+    },
+    {
+      "category": "큐커/오븐",
+      "positive": 5,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "TV",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 2
+    },
+    {
+      "category": "프로젝터",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "인덕션",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 1,
+      "unclear": 0
+    },
+    {
+      "category": "전자레인지",
+      "positive": 2,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "사운드/오디오",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "청소기",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    }
   ],
   "excerpts": {
     "positive": [
@@ -69,11 +116,26 @@
   },
   "keywords": {
     "positive": [
-      {"term": "디자인/깔끔", "count": 8},
-      {"term": "가성비/할인", "count": 7},
-      {"term": "만족/추천", "count": 6},
-      {"term": "AI/스마트 기능", "count": 5},
-      {"term": "화질/해상도", "count": 4}
+      {
+        "term": "디자인/깔끔",
+        "count": 8
+      },
+      {
+        "term": "가성비/할인",
+        "count": 7
+      },
+      {
+        "term": "만족/추천",
+        "count": 6
+      },
+      {
+        "term": "AI/스마트 기능",
+        "count": 5
+      },
+      {
+        "term": "화질/해상도",
+        "count": 4
+      }
     ],
     "negative": []
   },

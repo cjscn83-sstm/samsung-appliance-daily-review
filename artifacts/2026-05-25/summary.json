@@ -14,7 +14,7 @@
   "headline_quote": {
     "text": "원커넥터가 뭔가요? 삼성이나 엘지 tv 중에 몇 가지에만 적용되는데요",
     "source": "네이버블로그",
-    "category": "TV (더 프레임)"
+    "category": "TV"
   },
   "trend_summary": [
     "2026-05-25 수집 결과는 TV 카테고리 4건으로 집중되었고, 주방가전·리빙가전은 수집 0건이라 추세 판단 불가.",
@@ -23,18 +23,11 @@
   ],
   "category_sentiment": [
     {
-      "category": "TV (더 프레임)",
+      "category": "TV",
       "positive": 1,
       "negative": 0,
       "mixed": 0,
-      "unclear": 2
-    },
-    {
-      "category": "TV (Neo QLED)",
-      "positive": 0,
-      "negative": 0,
-      "mixed": 0,
-      "unclear": 1
+      "unclear": 3
     }
   ],
   "excerpts": {
@@ -42,7 +35,7 @@
       {
         "text": "tv는 삼성 더 프레임 모델로 원커넥터라는 장치가 지원되는 모델이었습니다. 원커넥터가 뭔가요? 삼성이나 엘지 tv 중에 몇 가지에만 적용되는데요",
         "source": "네이버블로그",
-        "category": "TV (더 프레임)",
+        "category": "TV",
         "url": "https://blog.naver.com/converse6672/224295733020"
       }
     ],
@@ -50,9 +43,18 @@
   },
   "keywords": {
     "positive": [
-      {"term": "더 프레임", "count": 1},
-      {"term": "원커넥터", "count": 1},
-      {"term": "무타공 설치", "count": 1}
+      {
+        "term": "더 프레임",
+        "count": 1
+      },
+      {
+        "term": "원커넥터",
+        "count": 1
+      },
+      {
+        "term": "무타공 설치",
+        "count": 1
+      }
     ],
     "negative": []
   },

@@ -268,7 +268,7 @@ def api_day(date: str) -> JSONResponse:
     return JSONResponse(fetch_day(date))
 
 
-@app.get("/category/{category}", response_class=HTMLResponse)
+@app.get("/category/{category:path}", response_class=HTMLResponse)
 def category_detail(request: Request, category: str):
     data = fetch_category(category)
     return templates.TemplateResponse(
@@ -278,7 +278,7 @@ def category_detail(request: Request, category: str):
     )
 
 
-@app.get("/api/category/{category}")
+@app.get("/api/category/{category:path}")
 def api_category(category: str) -> JSONResponse:
     return JSONResponse(fetch_category(category))
 

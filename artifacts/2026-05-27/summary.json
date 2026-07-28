@@ -22,10 +22,34 @@
     "에어컨과 냉장고는 수집 후기 전량이 광고성(의심)으로 분류되어 실수요 파악이 불가하며, 창문형 에어컨 소음 우려가 유일한 부정 신호로 등장함."
   ],
   "category_sentiment": [
-    {"category": "프로젝터", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "냉장고", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "에어컨", "positive": 0, "negative": 0, "mixed": 1, "unclear": 1},
-    {"category": "세탁기/건조기", "positive": 2, "negative": 0, "mixed": 0, "unclear": 1}
+    {
+      "category": "세탁기/건조기",
+      "positive": 2,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 1
+    },
+    {
+      "category": "에어컨",
+      "positive": 0,
+      "negative": 0,
+      "mixed": 1,
+      "unclear": 1
+    },
+    {
+      "category": "프로젝터",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    },
+    {
+      "category": "냉장고",
+      "positive": 1,
+      "negative": 0,
+      "mixed": 0,
+      "unclear": 0
+    }
   ],
   "excerpts": {
     "positive": [
@@ -52,19 +76,52 @@
   },
   "keywords": {
     "positive": [
-      {"term": "구매 후기 평균 4.8~4.9점", "count": 2},
-      {"term": "기존 교체 수요", "count": 2},
-      {"term": "BESPOKE AI", "count": 2},
-      {"term": "종합점수 79점대", "count": 2},
-      {"term": "영화관 분위기", "count": 1},
-      {"term": "간편하게", "count": 1},
-      {"term": "이사·신혼·선물 수요", "count": 1},
-      {"term": "2026 신상", "count": 1},
-      {"term": "사용후기 좋다", "count": 1},
-      {"term": "더 프리스타일", "count": 1}
+      {
+        "term": "구매 후기 평균 4.8~4.9점",
+        "count": 2
+      },
+      {
+        "term": "기존 교체 수요",
+        "count": 2
+      },
+      {
+        "term": "BESPOKE AI",
+        "count": 2
+      },
+      {
+        "term": "종합점수 79점대",
+        "count": 2
+      },
+      {
+        "term": "영화관 분위기",
+        "count": 1
+      },
+      {
+        "term": "간편하게",
+        "count": 1
+      },
+      {
+        "term": "이사·신혼·선물 수요",
+        "count": 1
+      },
+      {
+        "term": "2026 신상",
+        "count": 1
+      },
+      {
+        "term": "사용후기 좋다",
+        "count": 1
+      },
+      {
+        "term": "더 프리스타일",
+        "count": 1
+      }
     ],
     "negative": [
-      {"term": "소음 (염려)", "count": 1}
+      {
+        "term": "소음 (염려)",
+        "count": 1
+      }
     ]
   },
   "ad_warning": false
