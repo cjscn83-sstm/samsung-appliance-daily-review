@@ -1,0 +1,59 @@
+{
+  "date": "2026-07-28",
+  "metrics": {
+    "total": 17,
+    "positive": 12,
+    "negative": 1,
+    "mixed": 4,
+    "unclear": 0,
+    "ad_count": 12,
+    "positive_ratio": 0.71,
+    "ad_ratio": 0.71,
+    "star": 4
+  },
+  "headline_quote": {
+    "text": "삼성 세탁건조기 덕분에 빨래 삶의 질이 달라졌어요. 3개월 사용 후에도 늘 보송하고 포근하게 입혀요",
+    "source": "네이버블로그",
+    "category": "건조기"
+  },
+  "trend_summary": [
+    "비스포크 라인업(냉장고·세탁건조기·식기세척기)이 디자인·편의 만족도를 견인",
+    "무풍 에어컨은 쾌적하나 '직바람이 차갑다'는 실사용 지적이 등장",
+    "'먼지·고장' 부정글 상당수는 분해청소·액세서리 판매 유도 광고로 판별해 제외(광고 비중 높음)"
+  ],
+  "category_sentiment": [
+    {"category": "냉장고", "positive": 4, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "세탁기", "positive": 2, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "건조기", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "TV", "positive": 2, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "에어컨", "positive": 1, "negative": 1, "mixed": 1, "unclear": 0},
+    {"category": "식기세척기", "positive": 2, "negative": 0, "mixed": 0, "unclear": 0}
+  ],
+  "excerpts": {
+    "positive": [
+      {"text": "삼성 비스포크 냉장고 852L 코타화이트, 6개월 넘게 써보니 이거 진짜 없으면 안 되겠더라고요. 배송·설치도 깔끔했어요.", "source": "네이버블로그", "category": "냉장고", "url": "https://blog.naver.com/lahunxuf/224360256914"},
+      {"text": "비스포크 AI콤보는 진동소음 저감 기능이 있어 생각보다 조용한 편. 세탁실 문만 닫으면 실내에서 크게 거슬리지 않아요.", "source": "네이버블로그", "category": "세탁기", "url": "https://blog.naver.com/amazingdoyoon/224359781871"},
+      {"text": "삼성 세탁건조기 덕분에 빨래 삶의 질이 달라졌어요. 3개월 사용 후에도 아이 옷·속옷이 늘 보송하고 포근합니다.", "source": "네이버블로그", "category": "건조기", "url": "https://blog.naver.com/pagaxjez/224360011338"},
+      {"text": "Neo QLED AI TV QNH80 55인치 144Hz. 후기 흐름을 보면 화질·움직임·공간감이 가장 많이 언급되고, AI 업스케일링 체감이 좋아요.", "source": "네이버블로그", "category": "TV", "url": "https://blog.naver.com/z4etffas/224360239087"},
+      {"text": "삼성 비스포크 6인용 카운터탑 식기세척기, 3년 실사용하며 느낀 솔직한 장단점과 꿀팁까지. 좁은 주방에도 잘 맞았어요.", "source": "네이버블로그", "category": "식기세척기", "url": "https://blog.naver.com/space8442/224360197050"}
+    ],
+    "negative": [
+      {"text": "무풍 운전은 야간엔 편하지만 강한 바람을 대신하진 않았어요. 바람이 차갑게 확 들어오는 편이라 직바람이 신경 쓰였습니다.", "source": "네이버블로그", "category": "에어컨", "url": "https://blog.naver.com/assumptionpo/224360224034"}
+    ]
+  },
+  "keywords": {
+    "positive": [
+      {"term": "비스포크", "count": 9},
+      {"term": "디자인", "count": 7},
+      {"term": "대용량", "count": 6},
+      {"term": "AI", "count": 6},
+      {"term": "보송함", "count": 3}
+    ],
+    "negative": [
+      {"term": "직바람", "count": 2},
+      {"term": "강풍 부족", "count": 1},
+      {"term": "AS 대기", "count": 1}
+    ]
+  },
+  "ad_warning": true
+}
