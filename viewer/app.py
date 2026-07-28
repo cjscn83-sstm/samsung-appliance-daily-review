@@ -170,13 +170,85 @@ def fetch_day(date: str) -> dict[str, Any]:
         conn.close()
 
 
+def fetch_categories() -> list[dict[str, Any]]:
+    """전 기간 카테고리 목록 + 총 건수 (많은 순). 내비게이션·목록용."""
+    if not USE_PG and not DB_PATH.exists():
+        return []
+    conn = get_conn()
+    try:
+        rows = conn.execute(
+            """
+            SELECT category,
+                   SUM(positive) AS positive, SUM(negative) AS negative,
+                   SUM(mixed) AS mixed, SUM(unclear) AS unclear,
+                   SUM(positive + negative + mixed + unclear) AS total
+            FROM category_sentiment
+            GROUP BY category
+            ORDER BY total DESC
+            """
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def fetch_category(category: str) -> dict[str, Any]:
+    conn = get_conn()
+    try:
+        by_day = conn.execute(
+            """
+            SELECT date, positive, negative, mixed, unclear
+            FROM category_sentiment WHERE category = ?
+            ORDER BY date DESC LIMIT 14
+            """,
+            (category,),
+        ).fetchall()
+        if not by_day:
+            raise HTTPException(status_code=404, detail=f"No data for category {category}")
+
+        totals = conn.execute(
+            """
+            SELECT COALESCE(SUM(positive),0) AS positive,
+                   COALESCE(SUM(negative),0) AS negative,
+                   COALESCE(SUM(mixed),0) AS mixed,
+                   COALESCE(SUM(unclear),0) AS unclear
+            FROM category_sentiment WHERE category = ?
+            """,
+            (category,),
+        ).fetchone()
+
+        positive = conn.execute(
+            "SELECT date, source, text, url FROM excerpts "
+            "WHERE category = ? AND sentiment = 'positive' ORDER BY date DESC LIMIT 20",
+            (category,),
+        ).fetchall()
+        negative = conn.execute(
+            "SELECT date, source, text, url FROM excerpts "
+            "WHERE category = ? AND sentiment = 'negative' ORDER BY date DESC LIMIT 20",
+            (category,),
+        ).fetchall()
+
+        return {
+            "totals": dict(totals),
+            "by_day": [dict(r) for r in by_day],
+            "excerpts_positive": [dict(r) for r in positive],
+            "excerpts_negative": [dict(r) for r in negative],
+        }
+    finally:
+        conn.close()
+
+
 @app.get("/", response_class=HTMLResponse)
 def index(request: Request):
     days = fetch_recent_days(7)
     return templates.TemplateResponse(
         request,
         "index.html",
-        {"days": days, "db_missing": not USE_PG and not DB_PATH.exists()},
+        {
+            "days": days,
+            "categories": fetch_categories(),
+            "db_missing": not USE_PG and not DB_PATH.exists(),
+        },
     )
 
 
@@ -194,6 +266,21 @@ def api_days(limit: int = 7) -> JSONResponse:
 @app.get("/api/day/{date}")
 def api_day(date: str) -> JSONResponse:
     return JSONResponse(fetch_day(date))
+
+
+@app.get("/category/{category}", response_class=HTMLResponse)
+def category_detail(request: Request, category: str):
+    data = fetch_category(category)
+    return templates.TemplateResponse(
+        request,
+        "category.html",
+        {"category": category, "categories": fetch_categories(), **data},
+    )
+
+
+@app.get("/api/category/{category}")
+def api_category(category: str) -> JSONResponse:
+    return JSONResponse(fetch_category(category))
 
 
 if __name__ == "__main__":

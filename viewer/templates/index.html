@@ -22,6 +22,16 @@
     </p>
   </header>
 
+  {% if categories %}
+  <nav class="cat-nav">
+    {% for c in categories %}
+      <a class="cat-chip" href="/category/{{ c.category }}">
+        {{ c.category }} <span class="cnt">{{ c.total }}</span>
+      </a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+
   {% if not days %}
   <section class="empty-banner">
     <div class="empty-inner">
