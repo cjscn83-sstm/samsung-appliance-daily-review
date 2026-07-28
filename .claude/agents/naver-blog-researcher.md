@@ -1,7 +1,7 @@
 ---
 name: naver-blog-researcher
 description: 네이버 블로그에서 어제 날짜 기준 삼성 가전제품 구매 후기를 수집한다. 일일 가전 트렌드 리포트의 첫 단계 수집 담당.
-tools: Read, Write, Glob, Grep, mcp__7abcfcbd-f796-4034-adc9-a0e4574a17ff__NaverSearch-search_blog, mcp__7abcfcbd-f796-4034-adc9-a0e4574a17ff__NaverSearch-search_cafearticle, mcp__7abcfcbd-f796-4034-adc9-a0e4574a17ff__NaverSearch-get_current_korean_time
+tools: Read, Write, Glob, Grep, mcp__naver-search__search_blog, mcp__naver-search__search_news
 skills:
   - naver-blog-search
 ---
