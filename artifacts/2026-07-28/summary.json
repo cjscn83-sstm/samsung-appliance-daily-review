@@ -1,75 +1,60 @@
 {
   "date": "2026-07-28",
   "metrics": {
-    "total": 36,
-    "positive": 12,
-    "negative": 10,
-    "mixed": 13,
-    "unclear": 1,
-    "ad_count": 5,
-    "positive_ratio": 0.33,
-    "ad_ratio": 0.14,
-    "star": 2
+    "total": 9,
+    "positive": 7,
+    "negative": 1,
+    "mixed": 1,
+    "unclear": 0,
+    "ad_count": 20,
+    "positive_ratio": 0.78,
+    "ad_ratio": 0.69,
+    "star": 4
   },
   "headline_quote": {
-    "text": "일체형 콤보 6개월 써보니 편의성은 최고 — 출근했다 퇴근해서 정리만 하면 끝이에요",
-    "source": "클리앙",
+    "text": "삼성 세탁건조기 덕분에 빨래 삶의 질이 달라졌어요. 3개월 사용 후에도 늘 보송하고 포근합니다",
+    "source": "네이버블로그",
     "category": "세탁기/건조기"
   },
   "trend_summary": [
-    "커뮤니티(클리앙·디시·뽐뿌·미코·DVDPrime)로 소스를 바꾸니 광고 비중이 급감(0.67→0.14)하고 구조적 실단점이 선명해짐",
-    "반복 지적: 무풍 에어컨 곰팡이(마이크로홀 구조), 콤보 건조 9시간·동시사용 불가, S25 울트라 발열(유튜브앱), 폴더블 배터리·방수·힌지 크랙, 네오QLED 로컬디밍·번인",
-    "동시에 편의성·화질·휴대성 호평도 병존 — 커뮤니티는 장단점을 균형 있게 논의(혼합 비중 최다)"
+    "게시일을 오늘(7/28)로 엄격 검증하니 채택은 9건 — 사전예약 첫날이라 폴더블·워치·버즈 네이버 블로그는 사전예약 광고가 지배적이어서 다수 제외",
+    "당일 검증 후기는 가전 중심으로 긍정 우세(냉장고·세탁건조기·식기세척기 만족), 에어컨 무풍 직바람이 유일한 실단점",
+    "커뮤니티(클리앙 등)의 솔직한 단점은 게시일이 검증되지 않아(과거 글 혼입) 당일 집계에서 제외 — 신뢰성 우선"
   ],
   "category_sentiment": [
-    {"category": "냉장고", "positive": 2, "negative": 2, "mixed": 1, "unclear": 0},
-    {"category": "세탁기/건조기", "positive": 2, "negative": 1, "mixed": 2, "unclear": 0},
-    {"category": "TV", "positive": 2, "negative": 1, "mixed": 2, "unclear": 0},
-    {"category": "에어컨", "positive": 1, "negative": 2, "mixed": 2, "unclear": 0},
-    {"category": "스마트폰", "positive": 2, "negative": 1, "mixed": 2, "unclear": 0},
-    {"category": "폴더블", "positive": 1, "negative": 2, "mixed": 2, "unclear": 0},
-    {"category": "식기세척기", "positive": 1, "negative": 1, "mixed": 0, "unclear": 0},
-    {"category": "워치", "positive": 1, "negative": 0, "mixed": 1, "unclear": 0},
-    {"category": "태블릿", "positive": 0, "negative": 0, "mixed": 1, "unclear": 0},
-    {"category": "버즈", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1}
+    {"category": "세탁기/건조기", "positive": 2, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "냉장고", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "TV", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "식기세척기", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "스마트폰", "positive": 1, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "폴더블", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
+    {"category": "에어컨", "positive": 0, "negative": 1, "mixed": 0, "unclear": 0}
   ],
   "excerpts": {
     "positive": [
-      {"text": "일체형 콤보 6개월 사용 대만족. 편의성이 최고예요 — 출근했다 퇴근해서 정리만 하면 끝입니다.", "source": "클리앙", "category": "세탁기/건조기", "url": "https://www.clien.net/service/board/use/18737570"},
-      {"text": "아이폰 16프로에서 갤럭시 S25 울트라로 오랜만에 변경했는데, 몰랐던(좋은) 부분이 생각보다 많네요.", "source": "클리앙", "category": "스마트폰", "url": "https://www.clien.net/service/board/use/18982227"},
-      {"text": "밝기가 매우 뛰어나고 색감도 (OLED 제외) 최상급, 번인 걱정 없는 게 네오 QLED의 장점이에요.", "source": "DVDPrime", "category": "TV", "url": "https://dvdprime.com/g2/bbs/board.php?bo_table=tvmonitor&wr_id=170957"},
-      {"text": "냉장고만큼은 삼성이 LG보다 나은 것 같아요 — 냉장 성능과 디자인이 만족스럽습니다.", "source": "클리앙", "category": "냉장고", "url": "https://www.clien.net/service/board/park/15098132"},
-      {"text": "폴드 시리즈 롱텀 사용기 — 넓은 화면의 멀티태스킹 편의는 확실히 큰 메리트입니다.", "source": "클리앙", "category": "폴더블", "url": "https://www.clien.net/service/board/use/15933113"},
-      {"text": "무풍 모드는 직바람 없이 시원해서 여름 취침에 좋아요. 사용 습관만 잡으면 만족스럽습니다.", "source": "뽐뿌", "category": "에어컨", "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=57462"}
+      {"text": "삼성 세탁건조기 덕분에 빨래 삶의 질이 달라졌어요. 3개월 사용 후에도 아이 옷·속옷이 늘 보송하고 포근합니다.", "source": "네이버블로그", "category": "세탁기/건조기", "url": "https://blog.naver.com/pagaxjez/224360011338"},
+      {"text": "비스포크 AI콤보는 진동소음 저감 기능이 있어 생각보다 조용한 편. 세탁실 문만 닫으면 실내에서 크게 거슬리지 않아요.", "source": "네이버블로그", "category": "세탁기/건조기", "url": "https://blog.naver.com/amazingdoyoon/224359781871"},
+      {"text": "삼성 비스포크 냉장고 852L 코타화이트, 6개월 넘게 써보니 이거 진짜 없으면 안 되겠더라고요. 배송·설치도 깔끔했어요.", "source": "네이버블로그", "category": "냉장고", "url": "https://blog.naver.com/lahunxuf/224360256914"},
+      {"text": "Neo QLED AI TV QNH80 55인치 144Hz. 후기 흐름을 보면 화질·움직임·공간감이 가장 많이 언급되고, AI 업스케일링 체감이 좋아요.", "source": "네이버블로그", "category": "TV", "url": "https://blog.naver.com/z4etffas/224360239087"},
+      {"text": "삼성 비스포크 6인용 카운터탑 식기세척기, 3년 실사용하며 느낀 솔직한 장단점과 꿀팁까지. 좁은 주방에도 잘 맞았어요.", "source": "네이버블로그", "category": "식기세척기", "url": "https://blog.naver.com/space8442/224360197050"},
+      {"text": "갤럭시 S25 울트라 512GB를 한 달 써보니 부모님 선물로도 만족스러웠고, AI 기능도 생각보다 잘 씁니다.", "source": "네이버블로그", "category": "스마트폰", "url": "https://blog.naver.com/jynative/224360420236"},
+      {"text": "갤럭시 Z 폴드8 실물을 살펴보니 새 비율의 와이드 화면과 가벼운 무게가 실용적이더라고요.", "source": "네이버블로그", "category": "폴더블", "url": "https://blog.naver.com/empopo/224360425801"}
     ],
     "negative": [
-      {"text": "무풍은 마이크로홀 구조상 내부 습기가 잘 안 말라 곰팡이 번식 최적 환경 — 퀴퀴한 냄새에 심하면 검은 곰팡이. 분해청소 10~20만원 듭니다.", "source": "클리앙", "category": "에어컨", "url": "https://www.clien.net/service/board/use/18122705"},
-      {"text": "콤보 건조가 LG는 5시간인데 삼성은 9시간 걸려요. 게다가 세탁·건조 중엔 동시에 다른 기능도 못 씁니다.", "source": "클리앙", "category": "세탁기/건조기", "url": "https://www.clien.net/service/board/park/18814566"},
-      {"text": "S25 발열 이슈가 있네요 — 특히 유튜브앱에서 심하고, 충전 중엔 극도로 뜨거워진다는 불만이 많습니다.", "source": "클리앙", "category": "스마트폰", "url": "https://www.clien.net/service/board/park/19002625"},
-      {"text": "네오 QLED 로컬디밍 버그 — 검은 배경에 자막이 뜨면 화면이 확 어두워져요. 3년 쓰니 테두리·유튜브 아이콘이 번인처럼 보입니다.", "source": "DVDPrime", "category": "TV", "url": "https://dvdprime.com/g2/bbs/board.php?bo_table=tvmonitor&wr_id=386329"},
-      {"text": "냉동실 문이 잘 안 닫히고, 설치 1~2주 뒤 간헐 소음에 새벽잠을 설쳤어요. 컴프레서는 3번 수리 끝에 회생 불가 판정.", "source": "클리앙", "category": "냉장고", "url": "https://www.clien.net/service/board/use/17731486"},
-      {"text": "플립은 배터리가 3300mAh로 작아 사용시간이 짧고 방수도 없어요. 힌지 접힘부 필름 스크래치에 빨간 실선이 생겼습니다.", "source": "클리앙", "category": "폴더블", "url": "https://m.clien.net/service/board/use/17847788"},
-      {"text": "삼성 냉장고 어이없는 AS — 수리비가 6.3만원대인데 부품 내역도 안 알려줘요.", "source": "클리앙", "category": "냉장고", "url": "https://www.clien.net/service/board/use/3701784"},
-      {"text": "S25 울트라 카메라 프로모드도 역시 아쉽고, 새 카메라엔 이물질이 낄 가능성이 있습니다.", "source": "클리앙", "category": "스마트폰", "url": "https://www.clien.net/service/board/use/18920801"}
+      {"text": "무풍은 야간엔 편하지만 강한 바람을 대신하진 않고, 바람이 차갑게 확 들어오는 편이라 직바람이 신경 쓰였습니다.", "source": "네이버블로그", "category": "에어컨", "url": "https://blog.naver.com/assumptionpo/224360224034"}
     ]
   },
   "keywords": {
     "positive": [
-      {"term": "편의성", "count": 8},
-      {"term": "화질·밝기", "count": 6},
-      {"term": "휴대성", "count": 5},
-      {"term": "디자인", "count": 5},
-      {"term": "멀티태스킹", "count": 4},
-      {"term": "냉장 성능", "count": 3}
+      {"term": "보송함", "count": 3},
+      {"term": "편의성", "count": 3},
+      {"term": "화질", "count": 2},
+      {"term": "대용량", "count": 2},
+      {"term": "AI", "count": 2}
     ],
     "negative": [
-      {"term": "곰팡이", "count": 7},
-      {"term": "발열", "count": 6},
-      {"term": "건조시간", "count": 4},
-      {"term": "번인·로컬디밍", "count": 4},
-      {"term": "AS·잔고장", "count": 4},
-      {"term": "배터리·방수", "count": 3}
+      {"term": "직바람", "count": 1}
     ]
   },
-  "ad_warning": false
+  "ad_warning": true
 }
