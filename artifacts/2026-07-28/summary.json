@@ -1,14 +1,14 @@
 {
   "date": "2026-07-28",
   "metrics": {
-    "total": 9,
+    "total": 8,
     "positive": 7,
-    "negative": 1,
+    "negative": 0,
     "mixed": 1,
     "unclear": 0,
-    "ad_count": 20,
-    "positive_ratio": 0.78,
-    "ad_ratio": 0.69,
+    "ad_count": 21,
+    "positive_ratio": 0.88,
+    "ad_ratio": 0.72,
     "star": 4
   },
   "headline_quote": {
@@ -17,9 +17,9 @@
     "category": "세탁기/건조기"
   },
   "trend_summary": [
-    "게시일을 오늘(7/28)로 엄격 검증하니 채택은 9건 — 사전예약 첫날이라 폴더블·워치·버즈 네이버 블로그는 사전예약 광고가 지배적이어서 다수 제외",
-    "당일 검증 후기는 가전 중심으로 긍정 우세(냉장고·세탁건조기·식기세척기 만족), 에어컨 무풍 직바람이 유일한 실단점",
-    "커뮤니티(클리앙 등)의 솔직한 단점은 게시일이 검증되지 않아(과거 글 혼입) 당일 집계에서 제외 — 신뢰성 우선"
+    "게시일 검증(오늘) + 광고 필터를 통과한 실후기는 8건, 전부 긍정 — 사전예약 첫날이라 모바일은 사전예약 광고, 가전은 제휴 SEO가 지배적",
+    "이미지형 제휴 고지('네이버 쇼핑 커넥트… 수수료 제공')까지 Playwright로 잡아내니 '무풍 직바람' 부정글도 제휴글로 판별돼 제외 → 당일 검증 부정 후기 0건",
+    "즉 같은 날 네이버 블로그만으로는 균형 잡힌 실단점 확보가 구조적으로 어려움 — 게시일이 붙은 커뮤니티 소스(Apify)가 필요"
   ],
   "category_sentiment": [
     {"category": "세탁기/건조기", "positive": 2, "negative": 0, "mixed": 0, "unclear": 0},
@@ -27,8 +27,7 @@
     {"category": "TV", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
     {"category": "식기세척기", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
     {"category": "스마트폰", "positive": 1, "negative": 0, "mixed": 1, "unclear": 0},
-    {"category": "폴더블", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0},
-    {"category": "에어컨", "positive": 0, "negative": 1, "mixed": 0, "unclear": 0}
+    {"category": "폴더블", "positive": 1, "negative": 0, "mixed": 0, "unclear": 0}
   ],
   "excerpts": {
     "positive": [
@@ -40,9 +39,7 @@
       {"text": "갤럭시 S25 울트라 512GB를 한 달 써보니 부모님 선물로도 만족스러웠고, AI 기능도 생각보다 잘 씁니다.", "source": "네이버블로그", "category": "스마트폰", "url": "https://blog.naver.com/jynative/224360420236"},
       {"text": "갤럭시 Z 폴드8 실물을 살펴보니 새 비율의 와이드 화면과 가벼운 무게가 실용적이더라고요.", "source": "네이버블로그", "category": "폴더블", "url": "https://blog.naver.com/empopo/224360425801"}
     ],
-    "negative": [
-      {"text": "무풍은 야간엔 편하지만 강한 바람을 대신하진 않고, 바람이 차갑게 확 들어오는 편이라 직바람이 신경 쓰였습니다.", "source": "네이버블로그", "category": "에어컨", "url": "https://blog.naver.com/assumptionpo/224360224034"}
-    ]
+    "negative": []
   },
   "keywords": {
     "positive": [
@@ -52,9 +49,7 @@
       {"term": "대용량", "count": 2},
       {"term": "AI", "count": 2}
     ],
-    "negative": [
-      {"term": "직바람", "count": 1}
-    ]
+    "negative": []
   },
   "ad_warning": true
 }
