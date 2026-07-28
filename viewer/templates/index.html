@@ -11,8 +11,9 @@
     <h1>삼성 가전 일일 트렌드</h1>
     <p class="subtitle">
       {% if days %}
-        최근 {{ days|length }}일 ·
-        {{ days[-1].date }} ~ {{ days[0].date }}
+        최근 리포트 {{ days|length }}건 ·
+        {{ days[0].date }}
+        {% if days|length > 1 %}<span class="muted">(이전: {{ days[-1].date }})</span>{% endif %}
       {% elif db_missing %}
         아직 적재된 데이터가 없습니다.
         오케스트레이터를 backfill 모드로 1회 실행하면 D-7 카드가 채워집니다.

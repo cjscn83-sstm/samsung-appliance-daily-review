@@ -96,6 +96,7 @@ a:hover { text-decoration: underline; }
   color: var(--ink);
   text-decoration: none;
   position: relative;
+  overflow: hidden; /* 상단 톤 띠지를 카드 곡률에 맞춰 클리핑 (테두리와 radius 정합) */
   transition: transform .15s ease, box-shadow .15s ease;
   border: 1px solid var(--line);
 }
@@ -115,8 +116,6 @@ a:hover { text-decoration: underline; }
   position: absolute;
   top: 0; left: 0; right: 0; height: 4px;
   background: var(--pos);
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 .testimonial-card.tone-pos .quote { color: #064e3b; }
 .testimonial-card.tone-pos .metric.pos strong { color: #15803d; }
@@ -130,8 +129,6 @@ a:hover { text-decoration: underline; }
   position: absolute;
   top: 0; left: 0; right: 0; height: 4px;
   background: var(--neg);
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 .testimonial-card.tone-neg .quote { color: #7f1d1d; }
 
