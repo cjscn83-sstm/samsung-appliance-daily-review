@@ -146,6 +146,10 @@ def upsert_date(pg: "psycopg.Connection", sl: sqlite3.Connection, date: str) -> 
 
 
 def main() -> int:
+    try:  # Windows cp949 등에서 한글/기호 출력 깨짐 방지
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
     _load_dotenv()
     url = os.getenv("DATABASE_URL")
     if not url:
@@ -169,7 +173,7 @@ def main() -> int:
         }
     sl.close()
 
-    print(f"Supabase 동기화 완료 — {len(dates)}개 날짜 upsert ({dates[0]} ~ {dates[-1]})")
+    print(f"Supabase 동기화 완료 - {len(dates)}개 날짜 upsert ({dates[0]} ~ {dates[-1]})")
     for t, n in counts.items():
         print(f"  {t}: {n} rows")
     return 0
