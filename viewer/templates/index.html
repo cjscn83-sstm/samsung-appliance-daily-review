@@ -23,13 +23,25 @@
   </header>
 
   {% if categories %}
-  <nav class="cat-nav">
+  <section class="cat-dash" aria-label="품목별 현황">
     {% for c in categories %}
-      <a class="cat-chip" href="/category/{{ c.category }}">
-        {{ c.category }} <span class="cnt">{{ c.total }}</span>
-      </a>
+    {% set t = c.total if c.total and c.total > 0 else 1 %}
+    <a class="cat-tile" href="/category/{{ c.category }}">
+      <span class="name">{{ c.category }}</span>
+      <span class="total">{{ c.total }}</span>
+      <span class="bar">
+        <span class="seg p" style="width: {{ (c.positive / t * 100)|round(1) }}%"></span>
+        <span class="seg m" style="width: {{ (c.mixed / t * 100)|round(1) }}%"></span>
+        <span class="seg n" style="width: {{ (c.negative / t * 100)|round(1) }}%"></span>
+      </span>
+      <span class="split">
+        <span class="p">긍 {{ c.positive }}</span>
+        <span class="n">부 {{ c.negative }}</span>
+        <span class="muted">혼 {{ c.mixed }}</span>
+      </span>
+    </a>
     {% endfor %}
-  </nav>
+  </section>
   {% endif %}
 
   {% if not days %}
@@ -67,7 +79,7 @@
     {% set tone = 'pos' if d.positive_ratio >= 0.7 else ('neg' if d.positive_ratio > 0 and d.positive_ratio <= 0.45 else 'mid') %}
     <a class="testimonial-card star-{{ d.star }} tone-{{ tone }}" href="/day/{{ d.date }}">
       {% if d.ad_warning %}
-        <div class="warn-banner">광고성 비중 50% 초과</div>
+        <span class="warn-badge" title="광고성 비중 50% 초과">광고성 50%↑</span>
       {% endif %}
 
       <div class="stars" aria-label="별점 {{ d.star }}/5">
