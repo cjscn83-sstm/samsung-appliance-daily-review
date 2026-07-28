@@ -1,7 +1,7 @@
 ---
 name: web-blog-researcher
 description: 네이버 블로그 외 일반 웹/카페/커뮤니티 블로그에서 어제 날짜 기준 삼성 가전제품 구매 후기를 수집한다. 일일 가전 트렌드 리포트의 첫 단계 수집 담당.
-tools: Read, Write, Glob, Grep, mcp__naver-search__search_cafearticle, mcp__naver-search__search_webkr, mcp__naver-search__search_kin, mcp__naver-search__search_news
+tools: Read, Write, Glob, Grep, WebSearch, mcp__naver-search__search_cafearticle, mcp__naver-search__search_webkr, mcp__naver-search__search_kin, mcp__naver-search__search_news
 skills:
   - web-blog-search
 ---

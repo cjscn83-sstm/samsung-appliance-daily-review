@@ -19,7 +19,19 @@ description: 네이버 블로그 외 일반 웹·티스토리·브런치·카페
 1. 카테고리 트리에서 검색 키워드 목록을 가져온다.
    - **네이버 블로그는 광고·체험단·판매글 비중이 매우 높으므로 보조로만 쓰고**, 커뮤니티·전문 소스를 우선한다.
    - 키워드에 **`단점`·`장단점`·`솔직 후기`** 를 섞어 균형 잡힌 실사용 후기를 유도한다. (예: `삼성 무풍 에어컨 후기 단점`)
-   - `search_webkr`가 잡는 **전문/커뮤니티 도메인을 우선 채택**한다: 노써치(nosearch), 디시인사이드(dcinside), 클리앙(clien), 에펨코리아(fmkorea), 뽐뿌(ppomppu), DVDPrime, 오늘의집(ohou.se), 삼성닷컴 D2C 리뷰(samsung.com/sec …/reviews), rentre 등. 이들의 발췌·댓글이 블로그보다 솔직하다.
+
+   **[1순위] 커뮤니티 지정 검색 — `WebSearch` + `allowed_domains`** (가장 솔직한 실단점/댓글 토론):
+   ```
+   WebSearch(query="삼성 무풍 에어컨 후기 단점",
+     allowed_domains=["clien.net","fmkorea.com","dcinside.com","ppomppu.co.kr",
+       "mlbpark.donga.com","slrclub.com","dvdprime.com","meeco.kr","r.samsungmembers.com"])
+   ```
+   - 위 도메인 = 클리앙·에펨코리아·디시인사이드·뽐뿌·MLB파크·SLR클럽·DVDPrime·미코·삼성 멤버스(삼성 커뮤니티). 오디오(버즈)는 `dvdprime`·`meeco` 외 필요 시 헤드폰 커뮤니티 추가.
+   - WebSearch는 링크+요약을 주므로 **요약 속 실제 불만/장점 문장을 발췌**로 쓰고 출처는 해당 커뮤니티로 표기.
+
+   **[2순위] 네이버 지정 소스** — `search_kin`(지식iN Q&A), `search_cafearticle`(결과의 `cafeurl`로 삼성스마트폰·폰다방·JN테크리뷰·디벨로이드·닥터헤드폰 등 IT 카페 우선), `search_webkr`(노써치·오늘의집·삼성닷컴 D2C·rentre).
+
+   **[미지원]** YouTube 댓글·스레드/트위터(SNS)·소비자상담센터는 전용 커넥터 미연결로 수집 불가. 차량·게임·맘카페 등 제품과 무관한 카페는 제외.
 2. 다음 `mcp__naver-search__*` 도구를 `sort: "date"`(최신순), `display` 크게로 사용한다.
    **WebFetch/fetch는 사용하지 않는다** — 본문은 검색 결과의 `description`(약 200자 스니펫)으로 대체한다.
    - `search_webkr` (일반 웹·티스토리·브런치·커뮤니티 문서)
