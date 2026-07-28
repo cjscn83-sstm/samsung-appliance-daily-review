@@ -1,141 +1,70 @@
 {
   "date": "2026-07-28",
   "metrics": {
-    "total": 17,
-    "positive": 12,
-    "negative": 1,
-    "mixed": 4,
-    "unclear": 0,
-    "ad_count": 12,
-    "positive_ratio": 0.71,
-    "ad_ratio": 0.71,
-    "star": 4
+    "total": 21,
+    "positive": 9,
+    "negative": 4,
+    "mixed": 7,
+    "unclear": 1,
+    "ad_count": 14,
+    "positive_ratio": 0.43,
+    "ad_ratio": 0.67,
+    "star": 2
   },
   "headline_quote": {
-    "text": "삼성 세탁건조기 덕분에 빨래 삶의 질이 달라졌어요. 3개월 사용 후에도 늘 보송하고 포근하게 입혀요",
-    "source": "네이버블로그",
+    "text": "분리형 세탁기·건조기를 쓰다가 비스포크 AI 콤보를 들이니 공간 효율성이 정말 최고네요",
+    "source": "삼성닷컴 D2C 리뷰",
     "category": "세탁기/건조기"
   },
   "trend_summary": [
-    "비스포크 라인업(냉장고·세탁건조기·식기세척기)이 디자인·편의 만족도를 견인",
-    "무풍 에어컨은 쾌적하나 '직바람이 차갑다'는 실사용 지적이 등장",
-    "'먼지·고장' 부정글 상당수는 분해청소·액세서리 판매 유도 광고로 판별해 제외(광고 비중 높음)"
+    "커뮤니티·전문 소스(webkr·지식iN·삼성닷컴 D2C)로 넓히니 실단점이 드러남 — 무풍 곰팡이·초기가동, 식기세척기 소요시간, 폴더블 S펜·망원 부재",
+    "모바일 신규 추가: 폴더블(Z8)은 화면·휴대성 호평과 'S펜·망원 없음·220만원대'가 공존",
+    "네이버 카페/블로그는 판매·핫딜·체험단 비중이 높아 광고 필터로 다수 제외(광고 비중 높음)"
   ],
   "category_sentiment": [
-    {
-      "category": "냉장고",
-      "positive": 4,
-      "negative": 0,
-      "mixed": 1,
-      "unclear": 0
-    },
-    {
-      "category": "세탁기/건조기",
-      "positive": 3,
-      "negative": 0,
-      "mixed": 1,
-      "unclear": 0
-    },
-    {
-      "category": "TV",
-      "positive": 2,
-      "negative": 0,
-      "mixed": 1,
-      "unclear": 0
-    },
-    {
-      "category": "에어컨",
-      "positive": 1,
-      "negative": 1,
-      "mixed": 1,
-      "unclear": 0
-    },
-    {
-      "category": "식기세척기",
-      "positive": 2,
-      "negative": 0,
-      "mixed": 0,
-      "unclear": 0
-    }
+    {"category": "냉장고", "positive": 2, "negative": 1, "mixed": 1, "unclear": 0},
+    {"category": "세탁기/건조기", "positive": 2, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "에어컨", "positive": 1, "negative": 1, "mixed": 1, "unclear": 0},
+    {"category": "TV", "positive": 1, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "식기세척기", "positive": 1, "negative": 1, "mixed": 0, "unclear": 0},
+    {"category": "폴더블", "positive": 1, "negative": 1, "mixed": 0, "unclear": 0},
+    {"category": "워치", "positive": 1, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "스마트폰", "positive": 0, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "태블릿", "positive": 0, "negative": 0, "mixed": 1, "unclear": 0},
+    {"category": "버즈", "positive": 0, "negative": 0, "mixed": 0, "unclear": 1}
   ],
   "excerpts": {
     "positive": [
-      {
-        "text": "삼성 비스포크 냉장고 852L 코타화이트, 6개월 넘게 써보니 이거 진짜 없으면 안 되겠더라고요. 배송·설치도 깔끔했어요.",
-        "source": "네이버블로그",
-        "category": "냉장고",
-        "url": "https://blog.naver.com/lahunxuf/224360256914"
-      },
-      {
-        "text": "비스포크 AI콤보는 진동소음 저감 기능이 있어 생각보다 조용한 편. 세탁실 문만 닫으면 실내에서 크게 거슬리지 않아요.",
-        "source": "네이버블로그",
-        "category": "세탁기/건조기",
-        "url": "https://blog.naver.com/amazingdoyoon/224359781871"
-      },
-      {
-        "text": "삼성 세탁건조기 덕분에 빨래 삶의 질이 달라졌어요. 3개월 사용 후에도 아이 옷·속옷이 늘 보송하고 포근합니다.",
-        "source": "네이버블로그",
-        "category": "세탁기/건조기",
-        "url": "https://blog.naver.com/pagaxjez/224360011338"
-      },
-      {
-        "text": "Neo QLED AI TV QNH80 55인치 144Hz. 후기 흐름을 보면 화질·움직임·공간감이 가장 많이 언급되고, AI 업스케일링 체감이 좋아요.",
-        "source": "네이버블로그",
-        "category": "TV",
-        "url": "https://blog.naver.com/z4etffas/224360239087"
-      },
-      {
-        "text": "삼성 비스포크 6인용 카운터탑 식기세척기, 3년 실사용하며 느낀 솔직한 장단점과 꿀팁까지. 좁은 주방에도 잘 맞았어요.",
-        "source": "네이버블로그",
-        "category": "식기세척기",
-        "url": "https://blog.naver.com/space8442/224360197050"
-      }
+      {"text": "이전에 분리형 세탁기·건조기를 쓰다가 비스포크 AI 콤보를 들이니 공간 효율성이 정말 최고네요. 배송·설치도 깔끔했습니다.", "source": "삼성닷컴 D2C 리뷰", "category": "세탁기/건조기", "url": "https://www.samsung.com/sec/laundry-combo/combo-wd90f25chy-d2c/WD90F25CHY/"},
+      {"text": "비스포크 4도어 냉장고 875L, 단점은 딱히 없었고 냉장 성능도 만족스러워 가족들한테도 추천했어요.", "source": "웹 리뷰(rentre)", "category": "냉장고", "url": "https://rentre.kr/review/real-usage/detail/PhgLeD7w/"},
+      {"text": "세척력이 좋고 살균 기능이 있어 위생에 좋습니다. 세척 후 그릇에서 비린내가 안 나는 점이 가장 만족스러워요.", "source": "네이버블로그", "category": "식기세척기", "url": "https://blog.naver.com/duckpc/222100521056"},
+      {"text": "갤럭시 워치 울트라2는 배터리가 590→800mAh로 약 35% 커졌고, 새 Snapdragon Wear Elite 플랫폼으로 실사용 체감이 개선됐어요.", "source": "네이버 지식iN", "category": "워치", "url": "https://kin.naver.com/qna/detail.naver?docId=494443693"},
+      {"text": "폴드SE 50일 이상 장기 사용 후기 — 이전 S25 울트라 대비 배터리 체감이 낫고, 무엇보다 갤럭시의 편안함이 좋았습니다.", "source": "네이버카페", "category": "폴더블", "url": "https://cafe.naver.com/anycallusershow/5206473"},
+      {"text": "삼성 무풍 벽걸이 에어컨을 3개월 매일 써본 내돈내산 후기 — 직바람 없이 시원하고 전기세도 생각보다 괜찮았어요.", "source": "네이버블로그", "category": "에어컨", "url": "https://blog.naver.com/walletopener/224335839017"}
     ],
     "negative": [
-      {
-        "text": "무풍 운전은 야간엔 편하지만 강한 바람을 대신하진 않았어요. 바람이 차갑게 확 들어오는 편이라 직바람이 신경 쓰였습니다.",
-        "source": "네이버블로그",
-        "category": "에어컨",
-        "url": "https://blog.naver.com/assumptionpo/224360224034"
-      }
+      {"text": "무풍은 일반 에어컨과 구조가 달라 곰팡이 관리가 까다로운 편이고, 초기 가동 때 실내 온도를 충분히 내리려면 시간이 더 걸립니다.", "source": "네이버블로그", "category": "에어컨", "url": "https://blog.naver.com/air_consulting/223463660157"},
+      {"text": "냉장고는 모터 소음이 있는데, 너무 작은 원룸에서 쓰면 소음에 예민한 사람에겐 큰 단점이 됩니다.", "source": "네이버블로그", "category": "냉장고", "url": "https://blog.naver.com/xion9/223122955318"},
+      {"text": "단점 1. 세척 시간이 많이 걸립니다. 애벌세척도 여전히 어느 정도 해야 해서 완전한 해방은 아니에요.", "source": "네이버블로그", "category": "식기세척기", "url": "https://blog.naver.com/duckpc/222100521056"},
+      {"text": "갤럭시 Z 폴드8은 S펜을 사용할 수 없고 망원 렌즈도 빠졌으며, 가격도 약 220만 원대라 부담이 분명합니다.", "source": "네이버카페", "category": "폴더블", "url": "https://cafe.naver.com/anycallusershow/5210836"}
     ]
   },
   "keywords": {
     "positive": [
-      {
-        "term": "비스포크",
-        "count": 9
-      },
-      {
-        "term": "디자인",
-        "count": 7
-      },
-      {
-        "term": "대용량",
-        "count": 6
-      },
-      {
-        "term": "AI",
-        "count": 6
-      },
-      {
-        "term": "보송함",
-        "count": 3
-      }
+      {"term": "공간효율", "count": 6},
+      {"term": "디자인", "count": 5},
+      {"term": "세척력", "count": 4},
+      {"term": "배터리 개선", "count": 4},
+      {"term": "AI", "count": 4},
+      {"term": "휴대성", "count": 3}
     ],
     "negative": [
-      {
-        "term": "직바람",
-        "count": 2
-      },
-      {
-        "term": "강풍 부족",
-        "count": 1
-      },
-      {
-        "term": "AS 대기",
-        "count": 1
-      }
+      {"term": "곰팡이·관리", "count": 4},
+      {"term": "소요시간", "count": 3},
+      {"term": "S펜 없음", "count": 3},
+      {"term": "망원 없음", "count": 2},
+      {"term": "소음", "count": 2},
+      {"term": "가격", "count": 2}
     ]
   },
   "ad_warning": true
